@@ -11,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
-        app:elevation="4dp">
+        app:elevation="@dimen/app_bar_elevate">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:contentInsetStart="72dp"
+            app:contentInsetStart="@dimen/toolbar_inset_start"
             app:layout_collapseMode="pin"
             app:navigationIcon="@drawable/arrow_left"
             app:popupTheme="@style/AppTheme.PopupOverlay"
@@ -32,27 +32,26 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
+        android:id="@+id/match_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/match_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
-            style="@style/match_detail_card">
+        <LinearLayout style="@style/match_detail_card">
 
             <include
                 android:id="@+id/team_radiant"
                 layout="@layout/team_card_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp" />
+                android:layout_margin="@dimen/content_margin_left" />
 
             <include
                 android:id="@+id/team_dire"
                 layout="@layout/team_card_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp" />
+                android:layout_margin="@dimen/content_margin_left" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

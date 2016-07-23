@@ -4,4 +4,15 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="widget_margin">8dp</dimen>
+    <dimen name="app_bar_elevate">4dp</dimen>
+    <dimen name="toolbar_inset_start">72dp</dimen>
+    <dimen name="content_margin_left">16dp</dimen>
+    <dimen name="match_title_padding_top">5dp</dimen>
+    <dimen name="match_title_padding_bottom">5dp</dimen>
+    <dimen name="history_item_padding">5dp</dimen>
+    <dimen name="history_item_time_height">30dp</dimen>
+    <dimen name="history_item_lobby_text_size">12sp</dimen>
+    <dimen name="match_player_item_margin">10dp</dimen>
+    <dimen name="mpi_iv_hero_width">65dp</dimen>
+    <dimen name="mpi_iv_hero_height">43dp</dimen>
 </resources>

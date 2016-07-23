@@ -3,9 +3,16 @@ apply plugin: 'com.neenbedankt.android-apt'
 
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'dota2tracker'
+            keyPassword 'myzhzygh'
+            storeFile file('keystores/dota2tracker.jks')
+            storePassword 'myzhzygh'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
         applicationId "com.axolotl.dota2traker"
         minSdkVersion 16
@@ -18,9 +25,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
         }
     }
-
     buildTypes.each {
         it.buildConfigField 'String', 'STEAM_API_KEY', SteamApiKey
     }

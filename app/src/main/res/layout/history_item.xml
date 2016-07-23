@@ -6,8 +6,8 @@
     android:layout_height="wrap_content"
     android:background="?android:attr/selectableItemBackground"
     android:orientation="horizontal"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp">
+    android:paddingBottom="@dimen/history_item_padding"
+    android:paddingTop="@dimen/history_item_padding">
 
     <FrameLayout
         android:layout_width="0dp"
@@ -40,7 +40,7 @@
         <TextView
             android:id="@+id/tv_time"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/history_item_time_height"
             android:gravity="center"
             android:textAppearance="@style/TextAppearance.CommentTimestamp"
             tools:text="1 hours ago" />
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textSize="12sp"
+            android:textSize="@dimen/history_item_lobby_text_size"
             tools:text="match" />
     </LinearLayout>
 
