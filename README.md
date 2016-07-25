@@ -8,3 +8,5 @@ dota2 player ids to test:
 * 106863163  
 * 129585121
 
+Screenshots
+-----------
