@@ -14,5 +14,8 @@ phone:
 
 <img src="Screenshots/main.png" width="25%" />        <img src="Screenshots/history.png" width="25%" />  <img src="Screenshots/detail.png" width="25%" />   
 tablet:   
-<img src="Screenshots/tablet_main.png" width="80%" />
+<img src="Screenshots/tablet_main.png" width="80%" />   
+widget:   
+<img src="Screenshots/widget.png" width="40%"/>   
+
 
